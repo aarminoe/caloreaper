@@ -12,5 +12,9 @@ def home():
 def members():
     return {"Members": ["member1", "member2"]}
 
+@application.route("/meals")
+def meals():
+    return {"meals": ["meal1", "meal2"]}
+
 if __name__ == "__main__":
     application.run(debug=True)
