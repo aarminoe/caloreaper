@@ -16,5 +16,9 @@ def members():
 def meals():
     return {"meals": ["meal1", "meal2"]}
 
+@application.route("/friends")
+def friends():
+    return {"friends" ["friend1"]}
+
 if __name__ == "__main__":
     application.run(debug=True)
